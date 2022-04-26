@@ -1,0 +1,10 @@
+.custom-btn {
+    border: none;
+    font-family: 'Montserrat';
+    /* width: 25rem; */
+}
+
+.custom-btn:hover {
+    cursor: pointer;
+    background-color: #5ed7ff;
+}

